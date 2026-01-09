@@ -1,0 +1,373 @@
+@font-face {
+    font-family: moj_font;
+    src: url(font/Slovic_Demo_Var-SansSerif.otf);
+}
+* {
+    margin: 0;
+    padding:0;
+}
+body{
+    color:#FFBF00;
+    font-family: moj_font;
+    background-color:   #548CB4;
+}
+html{
+    scroll-behavior: smooth;
+}
+.glavno {
+    width: 100%;
+    height:14rem;
+    display: flex;
+    background-color: darkblue;
+}
+.glavno h1{
+    width:60%;
+    padding-left:3rem;
+    padding-top:3rem;
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    color:#FFBF00;
+}
+.glavno img {
+    height:14rem;
+    width: 40%;
+    float:right;
+}
+.navbar{
+    height:3rem;
+    width:100%;
+    border:2px solid black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: darkblue;
+}
+.navbar ul {
+    display: flex;
+    gap:2rem;
+}
+.navbar a{
+    text-decoration: none;
+    color:#FFBF00;
+}
+.pocetak{
+    position: absolute;
+    left:0;
+}
+.pocetak:hover{
+    background-color: grey ;
+}
+.sadrzaj {
+    margin:1rem;
+    text-align: justify;
+    font-size:1.5rem;
+    border:0.2rem dashed gold;
+    border-radius:5%;
+    padding:1rem;
+    line-height: 1.7;
+}
+.sadrzaj h1{
+    font-style: italic;
+    text-align:center;
+    font-size: 5rem;
+}
+.sadrzaj ol{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1.5rem;
+}
+.lolsajt{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.lane{
+    color:red;
+}
+.lolsajt .dugme{
+    background-image:url("https://gaming-cdn.com/images/products/9456/orig/league-of-legends-pc-game-cover.jpg?v=1747212286");
+    background-size: cover;
+    height: 10rem;
+    width: 20rem;
+    color:#FFBF00;
+    font-size:2rem;
+    text-align:start;
+}
+.yt{
+    font-size:4rem;
+    text-align: center;
+    position: absolute;
+    left:25%;
+    margin-top: 2rem;
+    background-color: #FFBF00;
+    border-radius: 40%;
+}
+.yt:active{
+    background-color: aqua;
+}
+h2{
+    text-align: center;
+    font-size:2rem;
+}
+.champ{
+    display:flex;
+    width: 100%;
+    height:30rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
+.champ a{
+    color:#FFBF00;
+    font-size:3rem;
+    text-align: center;
+    padding-top:10rem;
+    padding-left:2rem;
+}
+.champ img{
+    padding-left: 3rem;
+    width:50%;
+    float:right;
+}
+.mapa{
+    margin-left:25rem;
+    height:30rem;   
+    background-image: url("https://esportstalk.com/wp-content/uploads/2019/06/League-of-Legends-Summoners-Rift-Map-with-Notations.jpeg");
+    background-repeat: no-repeat;
+}
+@keyframes okretanje {
+
+    0% {
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform:rotateX(360deg) ;
+    }
+    
+}
+.mapa:hover{
+    animation: okretanje 4s ease-in-out;
+}
+.centrirano {
+    text-align: center;
+}
+.crveno{
+    color:red;
+    text-align: center;
+}
+.timovi{
+    width:100%;
+    height:30rem;
+    display:flex;
+}
+.timovi p{
+    text-align: center;
+}
+.t1 {
+    margin-left:0.9rem;
+    width:22%;
+    height:35rem;
+    display:inline-block;
+    padding-right:2.5rem;
+}
+.t1 img{
+        width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.t1:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.fnatic {
+        width:22%;
+    height:35rem;
+    display:inline-block;
+    padding-right:2.5rem;
+}
+.fnatic img {
+        width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.fnatic:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.g2 {
+        width:22%;
+    height:35rem;
+    display:inline-block;
+    padding-right:2.5rem;
+}
+.g2 img {
+        width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.g2:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.rng {
+        width:22%;
+    height:35rem;
+    display:inline-block;
+    padding-right:2.5rem;
+}
+.rng img {
+        width:100%;
+    height:80%;
+    border-radius: 10%;
+}
+.rng:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.fanartovi{
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:1.25rem;
+}
+
+.fanjedan img{
+    width:31rem;
+    height:25rem;
+}
+
+.fanjedan:hover{
+    animation: pomeranje 2s ease-in-out;
+}
+
+.fandva img{
+    width:31rem;
+    height:25rem;
+}
+
+.fandva:hover{
+    animation: pomeranjedole 2s ease-in-out;
+}
+
+.fantri img{
+    width:31rem;
+    height:25rem;
+}
+
+.fantri:hover{
+    animation: pomeranjedesno 2s ease-in-out;
+}
+
+@keyframes pomeranje {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes pomeranjedole {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes pomeranjedesno {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width:850px) { 
+    .header {
+        width: 100%;
+        height:40%;
+        display:flex;
+        align-items: center;
+        background-color:#30588C;
+    }
+
+    .header img{
+        width:40%;
+        height:40%;
+    }
+
+    .header h1{
+        font-family: moj_font;
+        position: absolute;
+        right:1.8rem;
+        font-style: italic;
+        font-style:italic;
+        color:white;
+    }
+
+    .navbar{
+        height:1.8rem;
+        background-color:#30588C;
+        border:0.125rem solid black;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .navbar ul li{
+        padding-right:0.95rem;
+        font-size:1.25rem;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul li:active{
+        background-color:#A63F8A;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color:white;
+    }
+
+    .lidesno{
+        right:0.3rem;
+        position: absolute;
+    }
+
+    #aktivno{
+        background-color: blueviolet;
+    }
+
+    .fanartovi{
+        width:100%;
+        display:block;
+        margin-top:1.25rem;
+    }
+
+    .fanjedan img, .fandva img, .fantri img{
+        width:100%;
+        height:40%;
+    }
+
+    .fanjedan:hover{
+        animation: pomeranje 2s ease-in-out;
+    }
+
+    .fandva:hover{
+        animation: pomeranjedesno 2s ease-in-out;
+    }
+
+    .fantri:hover{
+        animation: pomeranjedole 2s ease-in-out;
+    }
+}
